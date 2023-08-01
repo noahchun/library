@@ -3,10 +3,34 @@
     <head>
         <meta charset="UTF-8">
         <title>Library</title>
-        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        
+        <div class="header">
+            Library
+            <button>Log In</button>
+        </div>
+        <div class="content">
+            <div class="button-container">
+                <button data-modal-target="#modal" class="addBookButton">+ Add Book</button>
+            </div>
+            <div class="modal" id="modal">
+                <div class="modal-header">
+                    <div class="title">Add New Book</div>
+                    <button data-close-button class="close-button">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form id="addBookForm">
+                        <input type="text" id="title" placeholder="Title" required>
+                        <input type="text" id="author" placeholder="Author" required>
+                        <input type="number" id="pages" placeholder="Pages" required>
+                        <input type="submit" value="Add Book" class="submit-button">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="overlay"></div>
         <script src="script.js"></script>
     </body>
 </html>
