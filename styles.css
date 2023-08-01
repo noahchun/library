@@ -119,14 +119,43 @@ body {
 
 input[type="text"] {
     margin: 15px;
+    width: 200px;
     padding: 10px;
 }
 
 input[type="number"] {
     margin: 15px;
+    width: 200px;
     padding: 10px;
 }
 
 input[type="text"]::placeholder {
     font-family: "Sen", sans-serif;
+}
+
+input[type="number"]::placeholder {
+    font-family: "Sen", sans-serif;
+}
+
+input[type="submit"] {
+    font-family: "Sen", sans-serif;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 75px;
+    font-weight: bold;
+    background-color: lightgreen;
+}
+
+label {
+    font-family: "Sen", sans-serif;
+}
+
+input[type="checkbox"] {
+    margin: 15px;
+}
+
+.book-container {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-rows: 3fr 3fr 3fr;
 }
