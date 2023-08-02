@@ -159,3 +159,25 @@ input[type="checkbox"] {
     grid-template-columns: 3fr 3fr 3fr;
     grid-template-rows: 3fr 3fr 3fr;
 }
+
+.card {
+    background-color: darkgray;
+    border: none;
+    border-radius: 15px;
+    margin: 15%;
+    padding-left: 15%;
+    padding: 5%;
+}
+
+.card button {
+    font-family: "Sen", sans-serif;
+    background-color: #ff1e00;
+    padding: 3%;
+    border: none;
+    border-radius: 10%;
+}
+
+.card button:hover {
+    background-color: darkred;
+    transition: 0.5s;
+}
